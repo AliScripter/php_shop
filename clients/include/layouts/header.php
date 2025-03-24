@@ -22,10 +22,14 @@ $categories = $db->query("SELECT * FROM products WHERE id = 2 ;");
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tech Store</title>
-    <!-- Css -->
+    
+    <!-- Flowbite -->
     <link
         href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
         rel="stylesheet" />
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="./clients/assets/css/style.css" />
 </head>
