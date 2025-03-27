@@ -16,13 +16,14 @@ if (isset($_GET['id'])) {
         <div class="flex flex-col md:flex-row gap-4">
             <div class="flex-shrink-0 w-full">
                 <img
+                id="single__product_img"
                     src="../upload/img.jpeg"
                     alt="<?= $productData['title'] ?>"
                     class="w-full md:w-64 h-auto object-cover rounded" />
             </div>
 
             <!-- توضیحات محصول -->
-            <div class="flex flex-col justify-between">
+            <div class="flex flex-col justify-between w-full">
                 <div>
                     <h2 class="text-lg md:text-xl font-semibold mb-2">
                         <?= $productData['title'] ?>

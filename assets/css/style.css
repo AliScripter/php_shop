@@ -83,3 +83,8 @@
 :is(.dark) .fade-overlay {
   display: none;
 }
+
+/* For image in single.php */
+#single__product_img {
+  width: 100%;
+}
