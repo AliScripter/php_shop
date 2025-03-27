@@ -6,7 +6,7 @@ include "./include/layouts/slider.php";
 
 <!-- Most popular -->
 <h3 class="text-center my-10 text-2xl font-bold text-gray-900 dark:text-white">
-    Most Popular Products
+    🌟 Most Popular Products 🌟
 </h3>
 
 <?php
@@ -30,7 +30,7 @@ renderSlider($bestSellerProducts);
 <!-- Show All Products Btn -->
 <div class="blur-text-container">
     <h3 class="blur-text text-center my-10 pt-5 text-2xl font-bold text-gray-900 dark:text-white">
-        Latest Products
+        Latest Products ...
     </h3>
     <!-- <div class="fade-overlay"></div> -->
     <a

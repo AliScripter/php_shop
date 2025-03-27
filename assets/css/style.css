@@ -22,27 +22,17 @@
   padding: 0 2rem 1rem 2rem;
 }
 
+/* اصلاح استایل اسلایدر برای سازگاری با کارت‌های جدید */
 .swiper-slide {
   height: auto !important;
-}
-
-.swiper-slide img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  /* object-position: center center; */
-}
-
-.swiper-wrapper {
   display: flex;
-  align-items: stretch;
-  margin-bottom: 16px !important;
 }
 
 .swiper-slide > div {
   height: 100%;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .swiper-slide .p-5 {
@@ -55,6 +45,33 @@
 .swiper-slide a.w-fit {
   width: fit-content !important;
 }
+
+/* حذف max-width از کارت‌های درون اسلایدر */
+.swiper-slide .max-w-sm {
+  max-width: none;
+}
+
+/* تنظیم ارتفاع تصاویر در اسلایدر */
+/* اگه کارت ها کوتاه بلند شدن فعال کن این کد رو */
+/* .swiper-slide img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center center;
+} */
+
+.swiper-wrapper {
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 16px !important;
+}
+
+/* اگه کارت ها کوتاه بلند شدن فعال کن این کد رو */
+
+/* .swiper-slide img.rounded-t-lg {
+  height: 200px;
+  object-fit: cover;
+} */
 
 /* * Show All Products */
 .blur-text-container {

@@ -17,9 +17,8 @@ ini_set('display_errors', 1);
 // Include فایل‌های کانفیگ با مسیر پویا
 include_once $base_path . 'include/config.php';
 include_once $base_path . 'include/db.php';
+include_once $base_path . 'include/helpers.php';
 
-// دریافت اطلاعات از دیتابیس
-$categories = $db->query("SELECT * FROM products WHERE id = 2;");
 ?>
 
 <!DOCTYPE html>
