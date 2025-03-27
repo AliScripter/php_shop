@@ -1,18 +1,25 @@
 <?php
+// تشخیص مسیر فعلی
+$current_path = $_SERVER['PHP_SELF'];
+$base_path = '';
 
-// * Show All Errors :D
+// اگر در پوشه pages هستیم، مسیر را یک سطح بالاتر می‌بریم
+if (strpos($current_path, '/pages/') !== false) {
+    $base_path = '../';
+} else {
+    $base_path = './';
+}
+
+// نمایش خطاها
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-// * Include Config Files
-include_once './clients/include/config.php';
-include_once './clients/include/db.php';
+// Include فایل‌های کانفیگ با مسیر پویا
+include_once $base_path . 'include/config.php';
+include_once $base_path . 'include/db.php';
 
-// * Get Data From DB
-$categories = $db->query("SELECT * FROM products WHERE id = 2 ;");
-// print "<pre />";
-// print_r($categories->fetchAll(PDO::FETCH_ASSOC)[0]);
-
+// دریافت اطلاعات از دیتابیس
+$categories = $db->query("SELECT * FROM products WHERE id = 2;");
 ?>
 
 <!DOCTYPE html>
@@ -22,7 +29,7 @@ $categories = $db->query("SELECT * FROM products WHERE id = 2 ;");
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tech Store</title>
-    
+
     <!-- Flowbite -->
     <link
         href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
@@ -31,17 +38,17 @@ $categories = $db->query("SELECT * FROM products WHERE id = 2 ;");
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <link rel="stylesheet" href="./clients/assets/css/style.css" />
+    <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/style.css" />
 </head>
 
-<body>
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-white p-6">
 
     <!-- Menu -->
     <nav class="bg-white border-gray-200 dark:bg-gray-900">
         <div
             class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a
-                href="https://flowbite.com/"
+                href="../../../php_shop/index.php"
                 class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img
                     src="https://flowbite.com/docs/images/logo.svg"

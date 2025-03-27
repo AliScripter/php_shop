@@ -8,7 +8,7 @@ function renderSlider($products)
                 <div class="swiper-slide shrink-0">
                     <div
                         class="h-full shrink-0 max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-                        <a href="#">
+                        <a href="/../php_shop/pages/single.php?id=<?= $product['id']; ?>">
                             <img
                                 class="rounded-t-lg"
                                 src="./upload/img.jpeg"
@@ -16,7 +16,7 @@ function renderSlider($products)
                         </a>
                         <div class="p-5 text-left">
                             <div>
-                                <a href="#">
+                                <a href="/../php_shop/pages/single.php?id=<?= $product['id']; ?>">
                                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                                         <?php
                                         $titleWords = explode(' ', $product['title']);
@@ -32,7 +32,7 @@ function renderSlider($products)
                                 </p>
                             </div>
                             <a
-                                href="#"
+                                href="/../php_shop/pages/single.php?id=<?= $product['id']; ?>"
                                 class="inline-flex items-center w-fit px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                                 More Details
                                 <svg

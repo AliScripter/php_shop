@@ -2,7 +2,7 @@
      <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
          <div class="md:flex md:justify-between">
              <div class="mb-6 md:mb-0">
-                 <a href="https://flowbite.com/" class="flex items-center">
+                 <a href="../../../php_shop/index.php" class="flex items-center">
                      <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 me-3" alt="FlowBite Logo" />
                      <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
                  </a>
@@ -85,10 +85,14 @@
 
 
 
- <!--flowbite  -->
+ <!--Flowbite  -->
  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
  <!-- Swiper JS -->
  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+ <!-- Sweet Alert 2 -->
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
  <!-- Initialize Swiper -->
  <script>
      let swiper = new Swiper(".mySwiper", {
